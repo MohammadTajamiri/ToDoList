@@ -1,0 +1,67 @@
+body{
+    background-color: pink;
+}
+main{
+    background-color: aquamarine;
+    width: 65%;
+    margin: 5% auto;
+    border: 2px solid black;
+}
+#row{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #eff;
+}
+#toDo{
+    padding: 3px;
+    border: none;
+    height: 5vh;
+    width: 50%;
+    outline:none;
+    background: transparent;
+}
+#click{
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    background-color: rgb(189, 113, 113);
+    outline:none;
+}
+
+ul li{
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+    padding-left: 180px;
+    position: re;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 20px;
+    border-radius: 5%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 20px;
+    left: 10px;
+}
+#checked{
+    margin-right: 5px;
+    width:20px;
+    height: 20px;
+}
+#unchecked{
+    margin-right: 5px;
+    width:20px;
+    height: 20px;
+}
+#search{
+    width: 100%;
+}
