@@ -1,17 +1,23 @@
 body{
     background-color: pink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg,#153677,#4e085f);
 }
 main{
-    background-color: aquamarine;
-    width: 65%;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    width: 60%;
     margin: 5% auto;
     border: 2px solid black;
+}
+main h1{
+    margin-left: 150px
 }
 #row{
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 20px;
@@ -34,33 +40,47 @@ main{
 }
 
 ul li{
-    display: flex;
-    list-style: none;
-    margin-top: 5px;
-    padding-left: 180px;
-    position: re;
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 120px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
 }
 ul li::before{
     content: "";
     position: absolute;
     height: 28px;
-    width: 20px;
-    border-radius: 5%;
-    background-image: url(images/unchecked.png);
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("images/unchecked.png");
     background-size: cover;
     background-position: center;
-    top: 20px;
-    left: 10px;
+    top: 8px;
+    left: 87px;
 }
-#checked{
-    margin-right: 5px;
-    width:20px;
-    height: 20px;
+ul li.checked{
+    font-size: larger;
+    color: #555;
+    text-decoration: line-through;
 }
-#unchecked{
-    margin-right: 5px;
-    width:20px;
-    height: 20px;
+ul li.checked::before{
+    background-image: url("images/checked.png");
+}
+ul li span{
+    position: absolute;
+    right: 120px;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
 }
 #search{
     width: 100%;
